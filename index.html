@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="home" class="logo">Milanie <span>west</span></a>
+
+      
+
+      <nav class="navbar" id="myNavMenu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#feedback">Feedback</a>
+      </nav>
+
+       <nav class="navbarmenu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#feedback">Feedback</a>
+      </nav>
+
+
+      <div class="icons">
+        <div class="bx bx-search" id="search-btn"></div>
+        <div class="bx bx-menu" id="menu-btn"></div>
+      </div>
+
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="bx bx-search"></label>
+      </div>
+
+      
+      <!---darkmode-->
+      <div class="mode">
+        <div class="moon-sun" id="toggle-switch">
+            <i class='bx bx-moon' id="moon"></i>
+            <i class='bx bx-sun' id="sun"></i>
+        </div>
+      </div>
+      <div class="nav-menu-btn">
+        <i class="uil uil-bars" onclick="myMenuFuntion()"></i>
+      </div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Alina</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>"Design is a tool that allows us to leverage innovation to create a more beautiful and understandable world"</p>
+
+        <div class="social-icons">
+          <a href="https://github.com/alina-west"<i class='bx bxl-github' ></i></a>
+          <a href="https://t.me/milanie_westt"><i class='bx bxl-telegram' ></i></a>
+          <a href="https://www.instagram.com/milanie_west?igsh=MTdqNjBieWpma3R6cw=="><i class='bx bxl-instagram' ></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#contact" class="btn" onclick="openPopup()">Hire Projects</a>
+          <div class="popup" id="popup">
+        <img src="images/qrcode.jpg" style="width: 200px; height: 150px;padding-top: 30px;" />
+        <h4 style="padding-top: 10px;">If you want to hire projects, write me here!Just scan QR</h4>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+        </div>
+      </div>
+      <div class="home-img">
+        <img
+          src="images/blackgirl.jpg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <!--about-->
+    <section class="sectiona" id="about">
+        <div class="top-header">
+            <h1>About me</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <figure class="about-me">
+                        <figcaption>
+                            <img src="images/blackgirl.jpg" alt="" class="profile" />
+                            <h2>Designer</h2>
+                            <p style="font-size: 15px;">Hello! My name is Alina or just milanie_west. I am 17 years old. I'm currently studying in JIHC college in IT field. I am a beginner designer, in love with creating unique designs for logos/book covers/unique interfaces. I think I have already determined my path. Of course, my work experience is not long yet, but I am going to change it. My goal is to make projects special and add color to the world through design!</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-box">
+                    <span class="title">Photoshop</span>
+                    <div class="skill-bar">
+                       <span class="skill-per  photoshop">
+                        <span class="tooltip">100%</span>
+                       </span> 
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Illustrator</span>
+                    <div class="skill-bar">
+                       <span class="skill-per illustrator">
+                        <span class="tooltip">95%</span>
+                       </span> 
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">InDesign</span>
+                    <div class="skill-bar">
+                       <span class="skill-per indesign">
+                        <span class="tooltip">50%</span>
+                       </span> 
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <span class="title">Adobe Fresco</span>
+                    <div class="skill-bar">
+                       <span class="skill-per fresco">
+                        <span class="tooltip">30%</span>
+                       </span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="projects" style="margin-top: -280px;">
+    <div class="top-header">
+            <h1>My Projects</h1>
+        </div>
+    <div class="slider">
+      <div class="slides">
+        <img src="images/1.png" alt="Photo 1" />
+        <img src="images/2.png" alt="Photo 2" />
+        <img src="images/3.png" alt="Photo 3" />
+        <img src="images/4.png" alt="Photo 4" />
+        <img src="images/5.png" alt="Photo 5" />
+        <img src="images/6.png" alt="Photo 6" />
+      </div>
+      <button class="prevBtn">&#60;</button>
+      <button class="nextBtn">&#62;</button>
+    </div>
+    </section>
+
+    <!--CONTACT-->
+      <section id="feedback">
+        <div class="top-header">
+            <h1>Feedback</h1>
+        </div>
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contactInput"/>
+            <input type="mail" placeholder="Email" class="contactInput" style="margin-top: 10px;" />
+            <textarea  placeholder="Write your opinion" style="margin-top: 10px;"
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contactInput"
+            ></textarea>
+            
+        <div class="btn-group">
+          <a href="#contact" class="btn" >Hire Projects</a>
+        </div>
+          </form>
+        </div>
+      </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <p class="logo">Milanie_west</p>
+      
+        <div class="social-icons2">
+          <a href="https://github.com/alina-west"<i class='bx bxl-github' ></i></a>
+          <a href="https://t.me/milanie_westt"><i class='bx bxl-telegram' ></i></a>
+          <a href="https://www.instagram.com/milanie_west?igsh=MTdqNjBieWpma3R6cw=="><i class='bx bxl-instagram' ></i></a>
+        </div>
+      <p class="footer__copy">&#169; Done By Milanie west:2024</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
